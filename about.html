@@ -4,37 +4,46 @@
   <meta charset="UTF-8">
   <title>About | Drew Dow</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="styles/style.css" />
 </head>
 
 <body>
 
 <header>
-  <h1>About Me</h1>
-  <nav aria-label="Main Navigation">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="container">
+    <h1>About Me</h1>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
-<main>
-  <section>
+<main class="container stack">
+
+  <section class="stack">
     <h2>Background</h2>
-    <p>I am a student focused on web development, programming, and project management.</p>
+    <p class="muted">
+      I am a student focused on web development, programming, and project management.
+    </p>
   </section>
 
-  <section>
+  <section class="stack">
     <h2>Workspace</h2>
     <img src="images/workspace.jpg" alt="Modern workspace with laptop and notebook on desk">
+    <a href="contact.html" class="btn">Work With Me</a>
   </section>
+
 </main>
 
 <footer>
-  <p>&copy; 2026 Drew Dow | All Rights Reserved</p>
+  <div class="container">
+    <p>&copy; 2026 Drew Dow | All Rights Reserved</p>
+  </div>
 </footer>
 
 </body>
