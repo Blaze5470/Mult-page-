@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Drew Dow</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Contact Me</h1>
+  <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h2>Send a Message</h2>
+
+    <form action="#" method="post">
+      
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required minlength="2">
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="topic">Topic</label>
+      <select id="topic" name="topic">
+        <option value="project">Project Inquiry</option>
+        <option value="job">Job Opportunity</option>
+        <option value="general">General Question</option>
+      </select>
+
+      <fieldset>
+        <legend>Preferred Contact Method</legend>
+
+        <label>
+          <input type="radio" name="contact_method" value="email" required>
+          Email
+        </label>
+
+        <label>
+          <input type="radio" name="contact_method" value="phone">
+          Phone
+        </label>
+      </fieldset>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required minlength="10"></textarea>
+
+      <button type="submit">Submit</button>
+
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Drew Dow | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
